@@ -6,6 +6,6 @@ language: Python3<br/>
 framework: Locust<br/>
 
 ### directories
-+ business    Ğ·ĞèÒª×öĞÔÄÜ²âÊÔµÄ·şÎñÆ÷¹¦ÄÜ
-+ locustfiles    µ¥¶ÀÖ´ĞĞµÄlocustfileÎÄ¼ş
++ business       éœ€è¦åšæ€§èƒ½æµ‹è¯•çš„åŠŸèƒ½é›†åˆ
++ locustfiles    å•ç‹¬æ‰§è¡Œçš„locustfileæ–‡ä»¶
 
