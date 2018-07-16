@@ -8,6 +8,7 @@ from logging.handlers import RotatingFileHandler
 from business.contract import MyContract, AllContract
 from business.project import MyProject, AllProject, ManageProject
 from business.task import ReceiveTask, SendTask
+from business.approve import LaunchApproval, WaitApproval
 
 
 
@@ -68,7 +69,8 @@ class UserBehavior(TaskSet):
         #get_token(self)
         #get_console(self)    
         
-    tasks = {MyContract:20, AllContract:10, MyProject:20, AllProject:10, ManageProject:10, ReceiveTask:10, SendTask:10}
+    tasks = {MyContract:20, AllContract:10, MyProject:20, AllProject:10, ManageProject:10, \
+             ReceiveTask:10, SendTask:10, LaunchApproval:10, WaitApproval:10}
     
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior
