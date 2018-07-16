@@ -1,0 +1,30 @@
+2018-07-16 10:03:08.975000 [ERROR] DESKTOP-OOIIAES/stderr : Traceback (most recent call last):
+2018-07-16 10:03:08.976000 [ERROR] DESKTOP-OOIIAES/stderr : File "d:\anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+2018-07-16 10:03:08.982000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.982000 [ERROR] DESKTOP-OOIIAES/stderr : "__main__", mod_spec)
+2018-07-16 10:03:08.982000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.982000 [ERROR] DESKTOP-OOIIAES/stderr : File "d:\anaconda3\lib\runpy.py", line 85, in _run_code
+2018-07-16 10:03:08.983000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.983000 [ERROR] DESKTOP-OOIIAES/stderr : exec(code, run_globals)
+2018-07-16 10:03:08.983000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.984000 [ERROR] DESKTOP-OOIIAES/stderr : File "D:\Anaconda3\Scripts\locust.exe\__main__.py", line 9, in <module>
+2018-07-16 10:03:08.984000 [ERROR] DESKTOP-OOIIAES/stderr : File "d:\anaconda3\lib\site-packages\locust\main.py", line 385, in main
+2018-07-16 10:03:08.992000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.992000 [ERROR] DESKTOP-OOIIAES/stderr : docstring, locusts = load_locustfile(locustfile)
+2018-07-16 10:03:08.992000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.993000 [ERROR] DESKTOP-OOIIAES/stderr : File "d:\anaconda3\lib\site-packages\locust\main.py", line 352, in load_locustfile
+2018-07-16 10:03:08.993000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.993000 [ERROR] DESKTOP-OOIIAES/stderr : imported = __import__(os.path.splitext(locustfile)[0])
+2018-07-16 10:03:08.994000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.994000 [ERROR] DESKTOP-OOIIAES/stderr : File "D:\Locust\locustfiles\run.py", line 28, in <module>
+2018-07-16 10:03:08.994000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.995000 [ERROR] DESKTOP-OOIIAES/stderr : class UserBehavior(TaskSet):
+2018-07-16 10:03:08.996000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.997000 [ERROR] DESKTOP-OOIIAES/stderr : File "D:\Locust\locustfiles\run.py", line 64, in UserBehavior
+2018-07-16 10:03:08.997000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.997000 [ERROR] DESKTOP-OOIIAES/stderr : tasks = {Contract:10}
+2018-07-16 10:03:08.998000 [ERROR] DESKTOP-OOIIAES/stderr : 
+2018-07-16 10:03:08.998000 [ERROR] DESKTOP-OOIIAES/stderr : NameError
+2018-07-16 10:03:08.998000 [ERROR] DESKTOP-OOIIAES/stderr : :
+2018-07-16 10:03:08.998000 [ERROR] DESKTOP-OOIIAES/stderr : name 'Contract' is not defined
+2018-07-16 10:03:08.999000 [ERROR] DESKTOP-OOIIAES/stderr : 
