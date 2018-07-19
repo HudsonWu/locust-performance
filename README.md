@@ -20,4 +20,5 @@ locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com --n
 
 + web
 
-> locust -f run.py --host=http://example.com
+> locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com  
+http://localhost:8089
