@@ -7,7 +7,7 @@ from locust import TaskSet, task
 # consulting_id = "o803wk5py54mg6dl"
 
 # 线上服务器
-access_token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY4ODI1YjllZDU2ZDc1NDU2Y2JhYTcyNjI3NWNlMmQzZTZhYmM5ODRhMThiOWM3NzU0OWZhOGYzYTdlOGQ5YmMyMjJkZDUxZTFkMTdmMDI2In0.eyJhdWQiOiIyIiwianRpIjoiZjg4MjViOWVkNTZkNzU0NTZjYmFhNzI2Mjc1Y2UyZDNlNmFiYzk4NGExOGI5Yzc3NTQ5ZmE4ZjNhN2U4ZDliYzIyMmRkNTFlMWQxN2YwMjYiLCJpYXQiOjE1MzE3MTEwNDUsIm5iZiI6MTUzMTcxMTA0NSwiZXhwIjoxODQ3MDcxMDQ1LCJzdWIiOiIzNyIsInNjb3BlcyI6W119.b2-ykbRMG75jBIdSbCm0EXaL8Z6SJPncJmPPFHi0chyaBdG0RxszWhjRtbgwk1wp-vsDLLsq3a3p96tSJmiJAZ8iF8UImUvcfe7ffla6WXM5u8tcnvgE3uXhxQ32ZeOa3J90X-OnwCCOyQJc6db_jWXo6uxx4faL8tiR3aiZJmYTiUgJodq5JGCvOnDIu8u1RD0AkX_Ml5-_C-hOs0fxxu1pRgPONCjRFIu7N2Cf68p5Tf_jEhxcF2Sj0p5AjkVGAK3l4by-gE8AVhgStXLXNypY77-6ZlKOkgYj5HWtsY-ycT5KYgFAvZnya4lsj3RNykAc4nH27twaOhHYSKJbBtJmCEwRBBPrgus9zU2z7Zm1hwhA0OGkcUwiMvV9s9V1l2ALsCKzuhqz7SuixD7WWlzfERBxS3eGEwx5qNxq7uLS4qM5dDNs2TZk_SSecGU3f_8zRcf8FW5lWZNrWGTOQOC_8urCMHQerLqRcdHHfnnP_mtM8-zAgtlKVj6rnD_4ojEfsSEs0p0fXt1RTKnQifOt5K84S4uS60WeNqs5hrgec4yHAllehRTSXOWB7ibbnhaO5_IYwXkyL-KrIyln75KrJE5LbeHwlv2M1V5iE_LsMzIRw9HLHCZ6KyQkG7WLW6qXrF94FZCZtRYZe8Ca8E4cP2ZVafwGl02IKjyunDw"
+access_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImM4ZDk4NWUzOTEyNDkzMWI1NTBhY2I2MTE1YTZjMjQxZDlhOWM4Zjk4NDZmYjFhNjRiYWEwM2MwZjMxOGJmYTBmYzY4MjBkNzYyZWFhNjRkIn0.eyJhdWQiOiIyIiwianRpIjoiYzhkOTg1ZTM5MTI0OTMxYjU1MGFjYjYxMTVhNmMyNDFkOWE5YzhmOTg0NmZiMWE2NGJhYTAzYzBmMzE4YmZhMGZjNjgyMGQ3NjJlYWE2NGQiLCJpYXQiOjE1MzE5NjM4NjQsIm5iZiI6MTUzMTk2Mzg2NCwiZXhwIjoxODQ3MzIzODY0LCJzdWIiOiIzNyIsInNjb3BlcyI6W119.iOPJVrKoYqTs55_1rS_OAU5ZlDjoVrvzuBgtY-3QjMKmUARoUOJKuKdgnE1Cmq4gj2jlBi2cuPfStRZEMlEwM7TuCU4PXYSYD4wb5hDDFqvrdgvkc6kPA3cq5bemJKQC6CeTP3PmCQ_ILyATPZAOMsMzThAvh-FCLns5W_82hNG1bn-g410KGAbH_YgiqW6VNzNE0wom4DK7niqsiL8T31mV_-FG2P7r0-lejEXEViOWhAn1zcNmEpMFjPrijfmsfH50BA0WPXP9T3SYxEYlOnD-0zP13RIx4w4NHKOpho-w4udIFmlUBL2TR0CRhN8QeY2zmqGN8uKx7rRyDBiUV-lM3BaQK3L4LAYZQ_lkgTcXnCFlYjN5rZSVxnkUUFMyW4VHUzMVK3VEzTRuYaBQb4nbxYz7zFQPVjg1BRhAVyHmRIi4mnCwMPfiRGXOQxcTfJVZKOW4bFL68Dqp6hzmkdT-iDBzPlxIScXR1tLTUgKA8XMvNHUYZbkgO1E-XHkD2Oc35HxmTC1oP1K_FR_TsNSTy-wKiKXYJ1u5OMU6o8ZAMwnxWs-3q94TC0swh--ktW9GXr_HUIIlSTeE_tBUTkV0vcLFfwTlg789ncVbr-CuP1hTCU27sleacn8SoIx9rLqkobtodTB7Hc2EaHBRL--dRDPcHfDYUQfmbG_9iQM"
 consulting_id = "omx8kwrgl5aep3nv"
 
 headers = {'Accept': 'application/json', 'Authorization': 'Bearer '+str(access_token)}
@@ -17,28 +17,43 @@ class MyProject(TaskSet):
        
     @task(10)
     def all_myprojects(self):
-        self.client.get(name=u'参与项目-全部', url="/v1/self/project/list?limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'参与项目-全部', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&consulting_id=%s"% consulting_id)
     @task(8)
     def unstart_myprojects(self):
-        self.client.get(name=u'参与项目-未启动', url="/v1/self/project/list?limit=10&page=1&status=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'参与项目-未启动', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&status=1&consulting_id=%s"% consulting_id)
     @task(8)
     def inprogress_myprojects(self):
-        self.client.get(name=u'参与项目-进行中', url="/v1/self/project/list?limit=10&page=1&status=2&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'参与项目-进行中', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&status=2&consulting_id=%s"% consulting_id)
+    @task(8)
+    def stop_myprojects(self):
+        self.client.get(name=u'参与项目-暂停', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&status=3&consulting_id=%s"% consulting_id)
+    @task(8)
+    def complete_myprojects(self):
+        self.client.get(name=u'参与项目-已完成', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&status=4&consulting_id=%s"% consulting_id)
+    @task(8)
+    def break_myprojects(self):
+        self.client.get(name=u'参与项目-终止', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&status=5&consulting_id=%s"% consulting_id)
+    
     @task(8)
     def search_myprojects(self):
-        self.client.get(name=u'参与项目-搜索', url=u"/v1/self/project/list?limit=10&page=1&project_search=项目&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'参与项目-搜索', headers=headers, \
+                        url=u"/v1/self/project/list?limit=10&page=1&project_search=项目&consulting_id=%s"% consulting_id)
     @task(8)
     def role_myprojects(self):
-        self.client.get(name=u'参与项目-协调人角色', url="/v1/self/project/list?limit=10&page=1&project_role=write_reporter&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        # 筛选出角色(project_role)为协调人(write_reporter)的项目
+        self.client.get(name=u'参与项目-角色', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&project_role=write_reporter&consulting_id=%s"% consulting_id)
+    @task(8)
+    def process_myprojects(self):
+        # 筛选出进度(process)为“现场勘查”(3)的项目
+        self.client.get(name=u'参与项目-进度', headers=headers, \
+                        url="/v1/self/project/list?limit=10&page=1&process=3&consulting_id=%s"% consulting_id)
         
     @task(10)
     def stop(self):
@@ -48,23 +63,38 @@ class AllProject(TaskSet):
        
     @task(10)
     def all_projects(self):
-        self.client.get(name=u'所有项目-全部', url="/v1/manage/projects?limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'所有项目-全部', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&consulting_id=%s"% consulting_id)
     @task(8)
-    def complete_projects(self):
-        self.client.get(name=u'所有项目-已完成', url="/v1/manage/projects?limit=10&page=1&status=4&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+    def unstart_projects(self):
+        self.client.get(name=u'所有项目-未启动', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&status=1&consulting_id=%s"% consulting_id)
     @task(8)
     def inprogress_projects(self):
-        self.client.get(name=u'所有项目-进行中', url="/v1/manage/projects?limit=10&page=1&status=2&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'所有项目-进行中', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&status=2&consulting_id=%s"% consulting_id)
+    @task(8)
+    def stop_projects(self):
+        self.client.get(name=u'所有项目-暂停', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&status=3&consulting_id=%s"% consulting_id)
+    @task(8)
+    def complete_projects(self):
+        self.client.get(name=u'所有项目-已完成', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&status=4&consulting_id=%s"% consulting_id)
+    @task(8)
+    def break_projects(self):
+        self.client.get(name=u'所有项目-终止', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&status=5&consulting_id=%s"% consulting_id)
         
     @task(8)
     def search_projects(self):
-        self.client.get(name=u'所有项目-搜索', url=u"/v1/manage/projects?limit=10&page=1&project_search=项目&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'所有项目-搜索', headers=headers, \
+                        url=u"/v1/manage/projects?limit=10&page=1&project_search=项目&consulting_id=%s"% consulting_id)
+    @task(8)
+    def process_projects(self):
+        # 筛选出进度(process)为“现场勘查”(3)的项目
+        self.client.get(name=u'所有项目-进度', headers=headers, \
+                        url="/v1/manage/projects?limit=10&page=1&process=3&consulting_id=%s"% consulting_id)
         
     @task(5)
     def stop(self):
@@ -75,23 +105,33 @@ class ManageProject(TaskSet):
        
     @task(10)
     def all_manageprojects(self):
-        self.client.get(name=u'管理项目-全部', url="/v1/self/manage/department/projects?limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'管理项目-全部', headers=headers, \
+                        url="/v1/self/manage/department/projects?limit=10&page=1&consulting_id=%s"% consulting_id)
+    @task(8)
+    def unstart_manageprojects(self):
+        self.client.get(name=u'管理项目-未启动', headers=headers, \
+                        url="/v1/self/manage/department/projects?limit=10&page=1&status=1&consulting_id=%s"% consulting_id)
     @task(8)
     def inprogress_manageprojects(self):
-        self.client.get(name=u'管理项目-进行中', url="/v1/self/manage/department/projects?limit=10&page=1&status=2&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'管理项目-进行中', headers=headers, \
+                        url="/v1/self/manage/department/projects?limit=10&page=1&status=2&consulting_id=%s"% consulting_id)
+    @task(8)
+    def stop_manageprojects(self):
+        self.client.get(name=u'管理项目-暂停', headers=headers, \
+                        url="/v1/self/manage/department/projects?limit=10&page=1&status=3&consulting_id=%s"% consulting_id)
+    @task(8)
+    def complete_manageprojects(self):
+        self.client.get(name=u'管理项目-已完成', headers=headers, \
+                        url="/v1/self/manage/department/projects?limit=10&page=1&status=4&consulting_id=%s"% consulting_id)
         
     @task(8)
-    def review_manageprojects(self):
-        self.client.get(name=u'管理项目-内审', url="/v1/self/manage/department/projects?limit=10&page=1&process=7&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+    def process_manageprojects(self):
+        # 筛选出进度(process)为“现场勘查”(3)的项目
+        self.client.get(name=u'管理项目-进度', headers=headers, url="/v1/self/manage/department/projects?limit=10&page=1&process=3&consulting_id=%s"% consulting_id)
     @task(8)
     def search_manageprojects(self):
-        self.client.get(name=u'管理项目-搜索', url=u"/v1/self/manage/department/projects?limit=10&page=1&project_search=项目&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'管理项目-搜索', headers=headers, \
+                        url=u"/v1/self/manage/department/projects?limit=10&page=1&project_search=项目&consulting_id=%s"% consulting_id)
         
     @task(5)
     def stop(self):

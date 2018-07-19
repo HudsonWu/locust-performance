@@ -5,18 +5,25 @@ import itertools
 import logging
 import socket
 from logging.handlers import RotatingFileHandler
+
 from business.contract import MyContract, AllContract
 from business.project import MyProject, AllProject, ManageProject
 from business.task import ReceiveTask, SendTask
-from business.approve import LaunchApproval, WaitApproval
 
 
+'''
+# 合同、项目、任务列表的获取
+变量保持不变：
+1. 数据库表数据保持一致
+contracts、projects、tasks表数据条数保持一致(设置成1000条)
+2. 接口请求后返回的数据等于10条(limit=10&page=1)
+'''
 
 def append_file_logger():
     root_logger = logging.getLogger()
     log_format = "%(asctime)s.%(msecs)03d000 [%(levelname)s] {0}/%(name)s : %(message)s".format(socket.gethostname())
     formatter = logging.Formatter(log_format, '%Y-%m-%d %H:%M:%S')
-    file_handler = RotatingFileHandler('./locust.log', maxBytes=5 * 1024 * 1024, backupCount=3)
+    file_handler = RotatingFileHandler('./locust_01.log', maxBytes=5 * 1024 * 1024, backupCount=3)
     file_handler.setFormatter(formatter)
     file_handler.setLevel(logging.INFO)
     root_logger.addHandler(file_handler)     
@@ -47,13 +54,12 @@ def get_console(self):
         print("status_code: %s"% response.status_code)
         data = response.json()
         roles = data['data']
-        for i in roles:
-            if roles[i]['identity'] == "consulting":
-                consulting_id = roles[i]['identity_id']
-                consulting_name = roles[i]['name']
+        for role in roles:
+            if role['identity'] == "consulting":
+                consulting_id = role['identity_id']
+                consulting_name = role['name']
                 print("consulting_name: %s"% consulting_name)
                 break
-            i = i + 1
         if consulting_id == "":
             print(u'当前账户不存在咨询机构角色!!!')
             exit(0)
@@ -70,7 +76,7 @@ class UserBehavior(TaskSet):
         #get_console(self)    
         
     tasks = {MyContract:20, AllContract:10, MyProject:20, AllProject:10, ManageProject:10, \
-             ReceiveTask:10, SendTask:10, LaunchApproval:10, WaitApproval:10}
+             ReceiveTask:10, SendTask:10}
     
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior

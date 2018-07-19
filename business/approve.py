@@ -7,7 +7,7 @@ from locust import TaskSet, task
 # consulting_id = "o803wk5py54mg6dl"
 
 # 线上服务器
-access_token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY4ODI1YjllZDU2ZDc1NDU2Y2JhYTcyNjI3NWNlMmQzZTZhYmM5ODRhMThiOWM3NzU0OWZhOGYzYTdlOGQ5YmMyMjJkZDUxZTFkMTdmMDI2In0.eyJhdWQiOiIyIiwianRpIjoiZjg4MjViOWVkNTZkNzU0NTZjYmFhNzI2Mjc1Y2UyZDNlNmFiYzk4NGExOGI5Yzc3NTQ5ZmE4ZjNhN2U4ZDliYzIyMmRkNTFlMWQxN2YwMjYiLCJpYXQiOjE1MzE3MTEwNDUsIm5iZiI6MTUzMTcxMTA0NSwiZXhwIjoxODQ3MDcxMDQ1LCJzdWIiOiIzNyIsInNjb3BlcyI6W119.b2-ykbRMG75jBIdSbCm0EXaL8Z6SJPncJmPPFHi0chyaBdG0RxszWhjRtbgwk1wp-vsDLLsq3a3p96tSJmiJAZ8iF8UImUvcfe7ffla6WXM5u8tcnvgE3uXhxQ32ZeOa3J90X-OnwCCOyQJc6db_jWXo6uxx4faL8tiR3aiZJmYTiUgJodq5JGCvOnDIu8u1RD0AkX_Ml5-_C-hOs0fxxu1pRgPONCjRFIu7N2Cf68p5Tf_jEhxcF2Sj0p5AjkVGAK3l4by-gE8AVhgStXLXNypY77-6ZlKOkgYj5HWtsY-ycT5KYgFAvZnya4lsj3RNykAc4nH27twaOhHYSKJbBtJmCEwRBBPrgus9zU2z7Zm1hwhA0OGkcUwiMvV9s9V1l2ALsCKzuhqz7SuixD7WWlzfERBxS3eGEwx5qNxq7uLS4qM5dDNs2TZk_SSecGU3f_8zRcf8FW5lWZNrWGTOQOC_8urCMHQerLqRcdHHfnnP_mtM8-zAgtlKVj6rnD_4ojEfsSEs0p0fXt1RTKnQifOt5K84S4uS60WeNqs5hrgec4yHAllehRTSXOWB7ibbnhaO5_IYwXkyL-KrIyln75KrJE5LbeHwlv2M1V5iE_LsMzIRw9HLHCZ6KyQkG7WLW6qXrF94FZCZtRYZe8Ca8E4cP2ZVafwGl02IKjyunDw"
+access_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImM1NGIwOTZiM2FiMDkyZTRmYzdjZWQ4ZWRjODY5YzY2YTdlOWQ0NTZhMTUwMDJkMjU4Mzg2OTNmYWE3ZmVjYjczMmQzMzc1OWVkMTY5ZDg1In0.eyJhdWQiOiIyIiwianRpIjoiYzU0YjA5NmIzYWIwOTJlNGZjN2NlZDhlZGM4NjljNjZhN2U5ZDQ1NmExNTAwMmQyNTgzODY5M2ZhYTdmZWNiNzMyZDMzNzU5ZWQxNjlkODUiLCJpYXQiOjE1MzE3Mzg2MDYsIm5iZiI6MTUzMTczODYwNiwiZXhwIjoxODQ3MDk4NjA2LCJzdWIiOiIzNyIsInNjb3BlcyI6W119.aa9Uc7BWCaiRoAZHEjoJM1O0mpBk9mHMu8AwVJyy4xclDuPHCbFBBw0sBISHug0rY1YqW3mN5dx6-qrBO5aZgS0nrrEX4fWCJzeXUUJ6JIzMs7Yw24Yo6ZMPhfeMDWpDKd9iO8vGqS35xeA_HHMJHUq7uuOWILShHLfwHo8nPI4gCTQdeEQlq-qvxNaJDW4oNqlOTgk93BY8agzb-1qZhVkH-HyNtTGEeRSw9MY54lHvGkH5CpOcTQcg0PLbrV7coH0y2wZVJ1hVMk_S2CLbw4twgvF7PsBxwWT3D-1P76EFDZkgRNpEGPSeh5zGMVMToMUFAIkIKuJoT0C3dgA8z9X-JN60qJGyPxAFWslkI288Uxi6CwkyEFO2T4xUSEGeTyA6i_LBYLhqR8yWz2nIByXvvW2w63E9SxOAQAA8x8_LPKIUzsR0-cHa5siGpab-WbP5E06vADg_UpS9-S2fdUu0ANgboGODn_-jtrneY_xMnLafy6r02ZKzkPG0AunBzzRC_BPsfd6qaw8dXWuhM7gyfT32xfczbhhzpUiVSErsnA8qwA--xW9UthBNj-sOTsRM9SeKVCJUWSPqa9TeEH5MsRia7EXqRHSX-MFz1i4Y-lq6gbzABIWnkDY8MA35zMzQTdoz9eJi8Blngkj76HKTT5JLz9bvg7Pyroza-DU"
 consulting_id = "omx8kwrgl5aep3nv"
 
 headers = {'Accept': 'application/json', 'Authorization': 'Bearer '+str(access_token)}
@@ -17,38 +17,41 @@ class LaunchApproval(TaskSet):
        
     @task(10)
     def launch_send(self):
-        self.client.get(name=u'发起-送审', url="/v1/self/review/audit?limit=10&page=1&type=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'发起-送审', headers=headers, \
+                        url="/v1/self/review/audit?limit=10&page=1&type=1&consulting_id=%s"% consulting_id)
         
     @task(10)
     def launch_report(self):
-        self.client.get(name=u'发起-报批', url="/v1/self/review/audit?limit=10&page=1&type=2&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'发起-报批', headers=headers, \
+                        url="/v1/self/review/audit?limit=10&page=1&type=2&consulting_id=%s"% consulting_id)
     
     @task(10)
     def launch_record(self):
-        self.client.get(name=u'发起-备案', url="/v1/self/review/audit?limit=10&page=1&type=3&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'发起-备案', headers=headers, \
+                        url="/v1/self/review/audit?limit=10&page=1&type=3&consulting_id=%s"% consulting_id)
         
     @task(10)
     def launch_detect(self):
-        self.client.get(name=u'发起-检测', url="/v1/self/inspect/audit?limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'发起-检测', headers=headers, \
+                        url="/v1/self/inspect/audit?limit=10&page=1&consulting_id=%s"% consulting_id)
     
     @task(10)
     def launch_contract(self):
-        self.client.get(name=u'发起-合同评审', url="/v1/contract-reviews/self?limit=10&page=1&created_at_min=&created_at_max=\
-        &type=5&consulting_id=%s"% consulting_id, headers=headers)
+        self.client.get(name=u'发起-合同评审', headers=headers, \
+                        url="/v1/contract-reviews/self?limit=10&page=1&created_at_min=&created_at_max=&type=5&consulting_id=%s" \
+                        % consulting_id)
         
     @task(10)
     def launch_special(self):
-        self.client.get(name=u'发起-特批', url="/v1/projectspecialapprovals?limit=10&page=1&include=projectType,\
-        user,userDepartment,sales,documentPerson&consulting_id=%s"% consulting_id, headers=headers)
+        self.client.get(name=u'发起-特批', headers=headers, \
+                        url="/v1/projectspecialapprovals?limit=10&page=1&include=projectType,user,userDepartment,sales,documentPerson&consulting_id=%s" \
+                        % consulting_id)
         
     @task(10)
     def launch_issued(self):
-        self.client.get(name=u'发起-签发', url="/v1/documentissued?limit=10&page=1&include=\
-        project,stages&category=0&consulting_id=%s"% consulting_id, headers=headers)
+        self.client.get(name=u'发起-签发', headers=headers, \
+                        url="/v1/documentissueds?limit=10&page=1&include=project,stages&category=0&consulting_id=%s" \
+                        % consulting_id, headers=headers)
     
     @task(5)
     def stop(self):
@@ -59,38 +62,41 @@ class WaitApproval(TaskSet):
        
     @task(10)
     def wait_send(self):
-        self.client.get(name=u'审批-送审', url="/v1/review/audit?limit=10&page=1&type=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'审批-送审', headers=headers, \
+                        url="/v1/review/audit?limit=10&page=1&type=1&consulting_id=%s"% consulting_id)
         
     @task(10)
     def wait_report(self):
-        self.client.get(name=u'审批-报批', url="/v1/review/audit?limit=10&page=1&type=2&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'审批-报批', headers=headers, \
+                        url="/v1/review/audit?limit=10&page=1&type=2&consulting_id=%s"% consulting_id)
     
     @task(10)
     def wait_record(self):
-        self.client.get(name=u'审批-备案', url="/v1/review/audit?limit=10&page=1&type=3&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'审批-备案', headers=headers, \
+                        url="/v1/review/audit?limit=10&page=1&type=3&consulting_id=%s"% consulting_id)
         
     @task(10)
     def wait_detect(self):
-        self.client.get(name=u'审批-检测', url="/v1/inspect/audit?limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
+        self.client.get(name=u'审批-检测', headers=headers, \
+                        url="/v1/inspect/audit?limit=10&page=1&consulting_id=%s"% consulting_id)
     
     @task(10)
     def wait_contract(self):
-        self.client.get(name=u'合同评审', url="/v1/contract-reviews?limit=10&page=1&created_at_min=&created_at_max=\
-        &type=5&consulting_id=%s"% consulting_id, headers=headers)
+        self.client.get(name=u'合同评审', headers=headers, \
+                        url="/v1/contract-reviews?limit=10&page=1&created_at_min=&created_at_max=&type=5&consulting_id=%s" \
+                        % consulting_id)
         
     @task(10)
     def wait_special(self):
-        self.client.get(name=u'审批-特批', url="/v1/my/specialapprovalstages?limit=10&page=1&include=projectType,\
-        user,creator,approval&consulting_id=%s"% consulting_id, headers=headers)
+        self.client.get(name=u'审批-特批', headers=headers, \
+                        url="/v1/my/specialapprovalstages?limit=10&page=1&include=projectType, user,creator,approval&consulting_id=%s" \
+                        % consulting_id)
         
     @task(10)
     def wait_issued(self):
-        self.client.get(name=u'审批-签发', url="/v1/my/documentissuedstages?limit=10&page=1&include=\
-        documentIssued,project,createUser&category=0&consulting_id=%s"% consulting_id, headers=headers)
+        self.client.get(name=u'审批-签发', headers=headers, \
+                        url="/v1/my/documentissuedstages?limit=10&page=1&include=documentIssued,project,createUser&category=0&consulting_id=%s" \
+                        % consulting_id)
     
     @task(5)
     def stop(self):

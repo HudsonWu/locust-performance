@@ -7,7 +7,7 @@ from locust import TaskSet, task
 # consulting_id = "o803wk5py54mg6dl"
 
 # 线上服务器
-access_token = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImY4ODI1YjllZDU2ZDc1NDU2Y2JhYTcyNjI3NWNlMmQzZTZhYmM5ODRhMThiOWM3NzU0OWZhOGYzYTdlOGQ5YmMyMjJkZDUxZTFkMTdmMDI2In0.eyJhdWQiOiIyIiwianRpIjoiZjg4MjViOWVkNTZkNzU0NTZjYmFhNzI2Mjc1Y2UyZDNlNmFiYzk4NGExOGI5Yzc3NTQ5ZmE4ZjNhN2U4ZDliYzIyMmRkNTFlMWQxN2YwMjYiLCJpYXQiOjE1MzE3MTEwNDUsIm5iZiI6MTUzMTcxMTA0NSwiZXhwIjoxODQ3MDcxMDQ1LCJzdWIiOiIzNyIsInNjb3BlcyI6W119.b2-ykbRMG75jBIdSbCm0EXaL8Z6SJPncJmPPFHi0chyaBdG0RxszWhjRtbgwk1wp-vsDLLsq3a3p96tSJmiJAZ8iF8UImUvcfe7ffla6WXM5u8tcnvgE3uXhxQ32ZeOa3J90X-OnwCCOyQJc6db_jWXo6uxx4faL8tiR3aiZJmYTiUgJodq5JGCvOnDIu8u1RD0AkX_Ml5-_C-hOs0fxxu1pRgPONCjRFIu7N2Cf68p5Tf_jEhxcF2Sj0p5AjkVGAK3l4by-gE8AVhgStXLXNypY77-6ZlKOkgYj5HWtsY-ycT5KYgFAvZnya4lsj3RNykAc4nH27twaOhHYSKJbBtJmCEwRBBPrgus9zU2z7Zm1hwhA0OGkcUwiMvV9s9V1l2ALsCKzuhqz7SuixD7WWlzfERBxS3eGEwx5qNxq7uLS4qM5dDNs2TZk_SSecGU3f_8zRcf8FW5lWZNrWGTOQOC_8urCMHQerLqRcdHHfnnP_mtM8-zAgtlKVj6rnD_4ojEfsSEs0p0fXt1RTKnQifOt5K84S4uS60WeNqs5hrgec4yHAllehRTSXOWB7ibbnhaO5_IYwXkyL-KrIyln75KrJE5LbeHwlv2M1V5iE_LsMzIRw9HLHCZ6KyQkG7WLW6qXrF94FZCZtRYZe8Ca8E4cP2ZVafwGl02IKjyunDw"
+access_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImM4ZDk4NWUzOTEyNDkzMWI1NTBhY2I2MTE1YTZjMjQxZDlhOWM4Zjk4NDZmYjFhNjRiYWEwM2MwZjMxOGJmYTBmYzY4MjBkNzYyZWFhNjRkIn0.eyJhdWQiOiIyIiwianRpIjoiYzhkOTg1ZTM5MTI0OTMxYjU1MGFjYjYxMTVhNmMyNDFkOWE5YzhmOTg0NmZiMWE2NGJhYTAzYzBmMzE4YmZhMGZjNjgyMGQ3NjJlYWE2NGQiLCJpYXQiOjE1MzE5NjM4NjQsIm5iZiI6MTUzMTk2Mzg2NCwiZXhwIjoxODQ3MzIzODY0LCJzdWIiOiIzNyIsInNjb3BlcyI6W119.iOPJVrKoYqTs55_1rS_OAU5ZlDjoVrvzuBgtY-3QjMKmUARoUOJKuKdgnE1Cmq4gj2jlBi2cuPfStRZEMlEwM7TuCU4PXYSYD4wb5hDDFqvrdgvkc6kPA3cq5bemJKQC6CeTP3PmCQ_ILyATPZAOMsMzThAvh-FCLns5W_82hNG1bn-g410KGAbH_YgiqW6VNzNE0wom4DK7niqsiL8T31mV_-FG2P7r0-lejEXEViOWhAn1zcNmEpMFjPrijfmsfH50BA0WPXP9T3SYxEYlOnD-0zP13RIx4w4NHKOpho-w4udIFmlUBL2TR0CRhN8QeY2zmqGN8uKx7rRyDBiUV-lM3BaQK3L4LAYZQ_lkgTcXnCFlYjN5rZSVxnkUUFMyW4VHUzMVK3VEzTRuYaBQb4nbxYz7zFQPVjg1BRhAVyHmRIi4mnCwMPfiRGXOQxcTfJVZKOW4bFL68Dqp6hzmkdT-iDBzPlxIScXR1tLTUgKA8XMvNHUYZbkgO1E-XHkD2Oc35HxmTC1oP1K_FR_TsNSTy-wKiKXYJ1u5OMU6o8ZAMwnxWs-3q94TC0swh--ktW9GXr_HUIIlSTeE_tBUTkV0vcLFfwTlg789ncVbr-CuP1hTCU27sleacn8SoIx9rLqkobtodTB7Hc2EaHBRL--dRDPcHfDYUQfmbG_9iQM"
 consulting_id = "omx8kwrgl5aep3nv"
 
 headers = {'Accept': 'application/json', 'Authorization': 'Bearer '+str(access_token)}
@@ -17,63 +17,59 @@ class ReceiveTask(TaskSet):
        
     @task(10)
     def all_receivetasks(self):
-        self.client.get(name=u'收到任务-全部', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'收到任务-全部', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&consulting_id=%s"% consulting_id)
     @task(8)
     def internal_receivetasks(self):
-        self.client.get(name=u'收到任务-内审', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'收到任务-内审', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal&consulting_id=%s"% consulting_id)
     @task(8)
     def check_receivetasks(self):
-        self.client.get(name=u'收到任务-内审修改', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal_check&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'收到任务-内审修改', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal_check&consulting_id=%s"% consulting_id)
     @task(8)
     def survey_receivetasks(self):
-        self.client.get(name=u'收到任务-现场勘查', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_survey&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'收到任务-现场勘查', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser, contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_survey&consulting_id=%s" \
+                        % consulting_id)
     @task(8)
     def testing_receivetasks(self):
-        self.client.get(name=u'收到任务-现场检测', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_testing&consulting_id=%s"% consulting_id,\
-    headers=headers)
-        
+        self.client.get(name=u'收到任务-现场检测', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_testing&consulting_id=%s"% consulting_id)
     @task(8)
     def laboratory_receivetasks(self):
-        self.client.get(name=u'收到任务-实验室', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=laboratory&consulting_id=%s"% consulting_id,\
-    headers=headers)
-    
+        self.client.get(name=u'收到任务-实验室', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=laboratory&consulting_id=%s"% consulting_id)    
     @task(8)
     def billing_receivetasks(self):
-        self.client.get(name=u'收到任务-发票', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=billing&consulting_id=%s"% consulting_id,\
-    headers=headers)
-    
+        self.client.get(name=u'收到任务-发票', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=billing&consulting_id=%s"% consulting_id)
     @task(8)
     def other_receivetasks(self):
-        self.client.get(name=u'收到任务-其他', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=other&consulting_id=%s"% consulting_id,\
-    headers=headers)
+        self.client.get(name=u'收到任务-其他', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=other&consulting_id=%s"% consulting_id)
         
     @task(8)
+    def unstart_receivetasks(self):
+        self.client.get(name=u'收到任务-未开始', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=0&consulting_id=%s"% consulting_id)
+    @task(8)
     def inprogress_receivetasks(self):
-        self.client.get(name=u'收到任务-进行中', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=1&consulting_id=%s"% consulting_id,\
-    headers=headers)
-    
+        self.client.get(name=u'收到任务-进行中', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=1&consulting_id=%s"% consulting_id)
     @task(8)
     def complete_receivetasks(self):
-        self.client.get(name=u'收到任务-已完成', url="/v1/my/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=2&consulting_id=%s"% consulting_id,\
-    headers=headers)
+        self.client.get(name=u'收到任务-已完成', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=2&consulting_id=%s"% consulting_id)
+    @task(8)
+    def close_receivetasks(self):
+        self.client.get(name=u'收到任务-已关闭', headers=headers, \
+                        url="/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=3&consulting_id=%s"% consulting_id)
+    
+    @task(8)
+    def search_receivetasks(self):
+        self.client.get(name=u'收到任务-搜索', headers=headers, \
+                        url=u"/v1/my/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&project_name=项目&consulting_id=%s"% consulting_id,)
 
     @task(5)
     def stop(self):
@@ -84,64 +80,60 @@ class SendTask(TaskSet):
        
     @task(10)
     def all_sendtasks(self):
-        self.client.get(name=u'创建任务-全部', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'创建任务-全部', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&consulting_id=%s"% consulting_id)
     @task(8)
     def internal_sendtasks(self):
-        self.client.get(name=u'创建任务-内审', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'创建任务-内审', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal&consulting_id=%s"% consulting_id)
     @task(8)
     def check_sendtasks(self):
-        self.client.get(name=u'创建任务-内审修改', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal_check&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-        
+        self.client.get(name=u'创建任务-内审修改', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=internal_check&consulting_id=%s"% consulting_id)        
     @task(8)
     def survey_sendtasks(self):
-        self.client.get(name=u'创建任务-现场勘查', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_survey&consulting_id=%s"% consulting_id,\
-                        headers=headers)
-    
+        self.client.get(name=u'创建任务-现场勘查', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_survey&consulting_id=%s"% consulting_id)
     @task(8)
     def testing_sendtasks(self):
-        self.client.get(name=u'创建任务-现场检测', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_testing&consulting_id=%s"% consulting_id,\
-    headers=headers)
-        
+        self.client.get(name=u'创建任务-现场检测', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=field_testing&consulting_id=%s"% consulting_id)
     @task(8)
     def laboratory_sendtasks(self):
-        self.client.get(name=u'创建任务-实验室', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=laboratory&consulting_id=%s"% consulting_id,\
-    headers=headers)
-    
+        self.client.get(name=u'创建任务-实验室', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=laboratory&consulting_id=%s"% consulting_id)
     @task(8)
     def billing_sendtasks(self):
-        self.client.get(name=u'创建任务-发票', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=billing&consulting_id=%s"% consulting_id,\
-    headers=headers)
-    
+        self.client.get(name=u'创建任务-发票', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=billing&consulting_id=%s"% consulting_id)
     @task(8)
     def other_sendtasks(self):
-        self.client.get(name=u'创建任务-其他', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=other&consulting_id=%s"% consulting_id,\
-    headers=headers)
-        
-    @task(8)
-    def inprogress_sendtasks(self):
-        self.client.get(name=u'创建任务-进行中', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=1&consulting_id=%s"% consulting_id,\
-    headers=headers)
+        self.client.get(name=u'创建任务-其他', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&type=other&consulting_id=%s"% consulting_id)
     
     @task(8)
+    def unstart_sendtasks(self):
+        self.client.get(name=u'创建任务-未开始', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=0&consulting_id=%s"% consulting_id)
+    @task(8)
+    def inprogress_sendtasks(self):
+        self.client.get(name=u'创建任务-进行中', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=1&consulting_id=%s"% consulting_id)
+    @task(8)
     def complete_sendtasks(self):
-        self.client.get(name=u'创建任务-已完成', url="/v1/my/create/tasks?include=principal,executors,project,createUser,\
-        contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=2&consulting_id=%s"% consulting_id,\
-    headers=headers)
-
+        self.client.get(name=u'创建任务-已完成', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=2&consulting_id=%s"% consulting_id)
+    @task(8)
+    def close_sendtasks(self):
+        self.client.get(name=u'创建任务-已关闭', headers=headers, \
+                        url="/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&status=3&consulting_id=%s"% consulting_id)
+    
+    @task(8)
+    def search_sendtasks(self):
+        self.client.get(name=u'创建任务-搜索', headers=headers, \
+                        url=u"/v1/my/create/tasks?include=principal,executors,project,createUser,contract,projectTechnicalInstructors,projectReportUsers&limit=10&page=1&project_name=项目&consulting_id=%s" \
+                        % consulting_id)
+    
     @task(5)
     def stop(self):
         self.interrupt()
