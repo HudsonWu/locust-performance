@@ -1,17 +1,18 @@
 # locust-performance
 To do performance testing using locust
 
-### info
+## info
 language: **Python3**<br/>
 framework: **Locust**<br/>
 
-### directories
+## directories
 + business       需要做性能测试的功能集合
 + locustfiles    单独执行的locustfile文件
 
 ## use
 
-+ no web
+**no web**
+
 <pre>
 
 //-t 或 --run-time选项是locust v0.9的新功能
@@ -23,7 +24,7 @@ locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com --n
 </pre>
 
 
-+ web
+**web**
 
 > locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com  
 
