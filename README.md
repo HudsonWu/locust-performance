@@ -1,13 +1,13 @@
 # locust-performance
 To do performance testing using Locust
 
-+ info
++ **info**
   + language
-    + Python3
+      + Python3
   + framework
-    + Locust
+      + Locust
 
-+ directories
++ **directories**
   + business      需要做性能测试的功能集合
   + locustfiles   单独执行的locustfile文件
 
