@@ -13,7 +13,7 @@ To do performance testing using Locust
 
 ## How To Use
 
-提供了两种方式去执行性能测试<br/>
+**提供了两种方式去执行性能测试：**<br/>
 一种是直接执行run.py对所有接口进行测试<br/>
 另一种是进入locustfiles目录, 目录里有很多python文件, 分别对应不同模块, 对不同模块接口分别进行测试<br/>
 
@@ -30,6 +30,8 @@ locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com --n
 </pre>
 
 **web**
-> locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com  
+<pre>
+locust -f run.py --csv=foobar --logfile=locust.log --host=http://example.com  
 
-然后访问  http://localhost:8089
+//然后访问  http://localhost:8089
+</pre>
