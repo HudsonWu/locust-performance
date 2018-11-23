@@ -8,8 +8,12 @@ To do performance testing using Locust
       + Locust
 
 + **directories**
-  + business      需要做性能测试的功能集合
-  + locustfiles   单独执行的locustfile文件
+  + common
+      + 一些公共方法
+  + business
+      + 测试的具体接口
+  + locustfiles
+      + 可以单独执行的locustfile文件
 
 ## How To Use
 
