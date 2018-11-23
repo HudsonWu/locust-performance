@@ -1,11 +1,9 @@
 import logging
 from logging.handlers import RotatingFileHandler
-import itertools
 import socket
 
-counter = itertools.count()
 
-def append_file_logger(self, log_path):
+def append_file_logger(self, log_path, counter):
     root_logger = logging.getLogger()
     log_format = "%(asctime)s.%(msecs)03d000 [%(levelname)s] {0}/%(name)s : %(message)s".format(socket.gethostname())
     formatter = logging.Formatter(log_format, '%Y-%m-%d %H:%M:%S')

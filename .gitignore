@@ -1,2 +1,5 @@
 *.wpr
 *.wpu
+*.log
+*.csv
+__pycache__/
