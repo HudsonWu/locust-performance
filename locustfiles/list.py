@@ -3,8 +3,7 @@
 import sys
 from os.path import pardir, sep
 sys.path.append(pardir + sep)
-import time
-import itertools
+import time, itertools
 from locust import HttpLocust, TaskSet
 from common import log
 from business.contract import Contract
@@ -22,8 +21,7 @@ contracts、projects、tasks表数据条数保持一致(设置成1000条)
 '''
 
 
-class UserBehavior(TaskSet):
-    
+class ListTask(TaskSet):
         
     def on_start(self):
         counter = itertools.count(1)
@@ -34,7 +32,11 @@ class UserBehavior(TaskSet):
     #tasks = {Contract: 10, Project: 10, Task: 10}
     tasks = {Contract}
     
-class WebsiteUser(HttpLocust):
-    task_set = UserBehavior
+    def stop(self):
+        self.interrupt()
+
+
+class ListUser(HttpLocust):
+    task_set = ListTask
     min_wait = 5000
     max_wait = 10000
