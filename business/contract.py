@@ -3,7 +3,11 @@
 from locust import TaskSet, task
 from common import config
 
-class Priv(TaskSet):
+
+#合同管理
+
+#不同权限, 获取合同列表
+class ContractPriv(TaskSet):
        
     @task(10)
     def all_mycontracts(self):
@@ -17,9 +21,10 @@ class Priv(TaskSet):
     
     @task
     def stop(self):
-        self.interrupt()    
-    
-class Status(TaskSet):
+        self.interrupt()
+
+#根据合同状态进行切换
+class ContractStatus(TaskSet):
         
     @task(8)
     def seal_mycontracts(self):
@@ -77,7 +82,8 @@ class Status(TaskSet):
         self.interrupt()    
         
 
-class Filter(TaskSet):
+# web端合同筛选功能
+class ContractFilter(TaskSet):
     
     @task(8)
     def search_contracts(self):
@@ -96,7 +102,7 @@ class Filter(TaskSet):
 
 class Contract(TaskSet):
     
-    tasks = {Priv: 10, Status: 10, Filter: 10}
+    tasks = {ContractPriv: 10, ContractStatus: 10, ContractFilter: 10}
     
     @task
     def stop(self):
