@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from locust import TaskSet, task
+from locust import TaskSet, task, seq_task
 from common import config
 
 

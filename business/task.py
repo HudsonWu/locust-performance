@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from locust import TaskSet, task
+from locust import TaskSet, task, seq_task
 from common import config
 
 #任务管理
@@ -140,7 +140,8 @@ class SendTask(TaskSet):
     @task(5)
     def stop(self):
         self.interrupt()
-        
+
+
 class Taskb(TaskSet):
     
     tasks = {ReceiveTask: 10, SendTask: 10}

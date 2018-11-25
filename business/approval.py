@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from locust import TaskSet, task
+from locust import TaskSet, task, seq_task
 from common import config
 
 
@@ -55,7 +55,7 @@ class LaunchApproval(TaskSet):
     @task(10)
     def launch_offlineReview(self):
         self.client.get(name=u'发起-线下评审', headers=config.headers, \
-                        url='/v1/my/created/meetings?limit=10&page=1&type=1&consulting_id=%s'% config.consulting_id)
+                        url='/v1/my/created/mettings?limit=10&page=1&type=1&consulting_id=%s'% config.consulting_id)
     
     @task(10)
     def launch_obsoleteBill(self):
@@ -136,6 +136,7 @@ class WaitApproval(TaskSet):
     @task(5)
     def stop(self):
         self.interrupt()
+
 
 class Approval(TaskSet):
     

@@ -3,9 +3,7 @@
 import sys
 from os.path import pardir, sep
 sys.path.append(pardir + sep)
-import time, itertools
 from locust import HttpLocust, TaskSet
-from common import log
 from business.contract import Contract
 from business.project import Project
 from business.task import Taskb
@@ -24,19 +22,7 @@ contracts、projects、tasks表数据条数保持一致(设置成1000条)
 
 
 class ListTask(TaskSet):
-        
-    def on_start(self):
-        
-        try:
-            if isinstance(counter_list, object):
-                pass
-        except:
-            counter_list = itertools.count(1)
 
-        log_name_format = time.strftime("_%Y%m%d%H%M%S", time.localtime()) + '.log'
-        log_path = __file__.replace('.py', log_name_format)
-        log.append_file_logger(self, log_path, "list", counter_list)
-        
     tasks = {Contract: 10, Project: 10, Taskb: 10, Approval: 10}
     
     def stop(self):
