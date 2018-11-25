@@ -23,7 +23,6 @@ To do performance testing using Locust
 
 **no web**
 <pre>
-//代码中已经集成了log输出功能, 下面的命令执行时可以不用--logfile选项
 //使用-f选项指定要执行的文件, 可以执行的文件包括项目根目录下的run.py文件和locustfiles目录下的所有文件
 
 //-t 或 --run-time选项是locust v0.9的新功能
