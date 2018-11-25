@@ -3,4 +3,3 @@
 *.log
 *.csv
 __pycache__/
-common/config.py
